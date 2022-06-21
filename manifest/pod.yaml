@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: musinsub
+  labels:
+    app: musinsub
+spec:
+  containers:
+  - name: musinsub
+    image: dmogki/musin:t3
+    # command: ['sh', '-c', 'python iam_list.py 3600']
+    env:
+    - name: AWS_ACCESS_KEY_ID
+      valueFrom:
+        secretKeyRef:
+          name: awscredential
+          key: aws-access-key-id
+    - name: AWS_SECRET_ACCESS_KEY
+      valueFrom:
+        secretKeyRef:
+          name: awscredential
+          key: aws-secret-access-key
