@@ -2,7 +2,7 @@
 ## 구성
 Src : iam_list.py , requirements.txt   
 Manifast : manifest/AWS_Credential.yaml musinsub_pod.yaml
-## DokcerImage
+## DockerImage
 docker:musin:t3
 
 ## 실행법
