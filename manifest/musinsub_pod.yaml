@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: musinsub
-    image: dmogki/musin:t3
+    image: dmogki/musin:t4
     # command: ['sh', '-c', 'python iam_list.py 3600']
     env:
     - name: AWS_ACCESS_KEY_ID
